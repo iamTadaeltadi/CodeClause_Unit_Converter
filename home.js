@@ -12,6 +12,10 @@ menuItems.forEach(menuItem => {
   menuItem.addEventListener('click', function(event) {
     event.preventDefault(); 
     
+    document.getElementById("calResults").innerHTML=`<p>
+      <font color="red"><b>Result:</b></font>
+      </p>`;
+    
     const selectedMenuItem = menuItem.innerText;
     var id = event.target.id;
     unitMeasurenents=units[id];
